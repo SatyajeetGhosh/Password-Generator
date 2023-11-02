@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Icon CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Password Generator</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Password Generator</h1>
+
+        <div class="input-box">
+            <input type="text" class="passwordBox" id="password-box" disabled>
+            <span class="material-symbols-outlined" id="copy-btn">content_copy</span>
+        </div>
+
+        <input type="range" min="3" max="16" value="8" id="range-bar">
+
+        <div class="password-length">
+            <p>Password Length:</p>
+            <span id="password-length"></span>
+        </div>
+
+        <div class="options">
+            <label for="uppercase">Include uppercase letters (A-Z)</label>
+            <input type="checkbox" name="uppercase" id="uppercase" checked>
+        </div>
+        <div class="options">
+            <label for="lowercase">Include lowercase letters (a-z)</label>
+            <input type="checkbox" name="lowercase" id="lowercase" checked>
+        </div>
+        <div class="options">
+            <label for="numbers">Include numbers (0-9)</label>
+            <input type="checkbox" name="numbers" id="numbers" checked>
+        </div>
+        <div class="options">
+            <label for="special">Include special charcters (!@#)</label>
+            <input type="checkbox" name="special" id="special" checked>
+        </div>
+
+        <div class="btn-container">
+            <button type="submit" class="gen-btn" id="gen-btn">Generate</button>
+            <button class="reset-btn" id="reset-btn">Reset</button>
+        </div>        
+    </div>
+
+    <!-- Custom Js -->
+    <script src="script.js"></script>
+</body>
+</html>

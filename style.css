@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 2em;
+    /* background: #a8c0ff;  
+    background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);  
+    background: linear-gradient(to right, #3f2b96, #a8c0ff);  */
+    background: url(assets/night-bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+body .container{
+    padding: 2.5em;
+    max-width: 500px;
+    width: 100%;
+    background: #ffffff12;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px #0000001a;
+    backdrop-filter: blur(16.1px);
+    -webkit-backdrop-filter: blur(16.1px);
+    border: 1px solid #ffffff2a;
+    
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+body .container h1{
+    font-weight: 500;
+    font-size: 2.2rem;
+    margin-bottom: 0.5em;
+}
+
+body .container .input-box{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+body .container input{
+    width: 100%;
+}
+
+body .container .input-box input{
+    width: 100%;
+    background: #ffffff75;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 18px;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+body .container .input-box span{
+    position: absolute;
+    right: 10px;
+    bottom: 32px;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+body .container .password-length{
+    display: flex;
+    gap: 0.5em;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1.5em;
+}
+
+body .container .options{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+body .container .options input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background: #ffffff75;
+}
+
+body .container .btn-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body .container .gen-btn,body .container .reset-btn{
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #ffffff75;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-top: 1em;
+    font-weight: 600;
+    width: 150px;
+}
+
+body .container .gen-btn:hover, body .container .reset-btn:hover{
+    transform: scale(1.05);
+}
